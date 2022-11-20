@@ -1,7 +1,39 @@
 {
-  "name": "hardhat-project",
+  "name": "Ethernaut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-goerli": "hardhat run scripts/deploy.js --network goerli"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
-    "hardhat": "^2.12.2"
+    "@types/chai": "^4.3.0",
+    "@types/glob": "*",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "*",
+    "chai": "^4.3.6",
+    "hardhat": "*",
+    "hardhat-contract-sizer": "^2.6.1",
+    "prettier": "2.6.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.2",
+    "@manifoldxyz/creator-core-solidity": "^1.0.4",
+    "@openzeppelin/contracts": "*",
+    "axios": "^0.27.2",
+    "dotenv": "*",
+    "glob": "^8.0.3",
+    "path": "^0.12.7"
   }
 }
